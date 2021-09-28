@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <title>Internshala</title>
+</head>
+
+<body>
+
+
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
+        <div class="container-fluid">
+            <!--  Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--  Logo-->
+            <img src="images/logo.jpg" class="logo" alt="" srcset="">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Internships
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Online Trainings
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item fresher_jobs">
+                        <a class="nav-link active" aria-current="page" href="#">Fresher Jobs</a>
+                    </li>
+
+                    <form class="d-flex">
+                        <button class="btn login" type="submit">Login</button>
+                    </form>
+
+
+
+                    <li class="nav-item dropdown register">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Register
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!--Body -->
+    <div class="container-fluid section my-5">
+        <div class="container body">
+            <form id="internship_search_button_form">
+                <div class="input-group has_cross_and_button" id="internship_job_search">
+                    <input type="text" class="form-control pop ui-autocomplete-input"
+                        placeholder="What are you looking for?" id="internship_modal_search_input" autocomplete="off"
+                        data-original-title="" title="">
+                    <span>
+                        <button class="search_btn"><img class="search" src="images/search.jpg" alt=""
+                                srcset=""></button>
+                    </span>
+
+                </div>
+            </form>
+        </div>
+
+<!-- Carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="height:10%">
+                    <img src="images/carousel1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" style="height:10%">
+                    <img src="images/carousel2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" style="height:10%">
+                    <img src="images/carousel3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <div class="Internships">
+            <h3 style="font-weight: 500;">Internships</h3>
+            <h5 style="font-weight: lighter;"> Apply to 10,000+ internships for free</h5>
+
+        </div>
+
+
+
+        <!-- Cities -->
+        <h5 style="text-align: center; margin-left: 2rem; font-weight: bold;">Popular Cities</h5>
+        <div class="popular_cities">
+
+
+
+            <div class="row">
+                <div class=" card col-md-1">
+                    <img src="images/Screenshot_20210927-184332_Chrome.jpg" alt="">
+                </div>
+                <div class="card col-md-1">
+                    <img src="images/Screenshot_20210927-184518_Chrome.jpg" alt="">
+                </div>
+                <div class="card col-md-1">
+                    <img src="images/Screenshot_20210927-184651_Chrome.jpg" alt="">
+                </div>
+                <div class="card col-md-1">
+                    <img src="images/Screenshot_20210927-184727_Chrome.jpg" alt="">
+                </div>
+                <div class="card col-md-1">
+                    <img src="images/Screenshot_20210927-184808_Chrome.jpg" alt="">
+                </div>
+                <div class="card col-md-1">
+                    <img src="images/Screenshot_20210927-184841_Chrome.jpg" alt="">
+                </div>
+                <div class="card col-md-1">
+                    <img src="images/Screenshot_20210927-185018_Chrome.jpg" alt="">
+                </div>
+                <div class="card col-md-1">
+                    <img src="images/int.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top:1.5rem; font-size: 1.2rem;"> <a style="text-decoration: none;"
+                href="#">View all internships -></a></div>
+
+
+        <h5 style="text-align: center; margin: 23px; font-weight: bold;">Popular Categories</h5>
+        <div class="popular_categories">
+
+            <div class="row">
+                <div class=" card col-md-1">
+                    <img src="images/categories/Screenshot_20210927-183650_Chrome.jpg" alt="">
+                </div>
+                <div class="card col-md-1">
+                    <img src="images/categories/Screenshot_20210927-183736_Chrome.jpg" alt="">
+                </div>
+                <div class="card col-md-1">
+                    <img src="images/categories/Screenshot_20210927-183830_Chrome.jpg" alt="">
+                </div>
+                <div class="card col-md-1">
+                    <img src="images/categories/Screenshot_20210927-183908_Chrome.jpg" alt="">
+                </div>
+                <div class="card col-md-1">
+                    <img src="images/categories/Screenshot_20210927-183953_Chrome.jpg" alt="">
+                </div>
+                <div class="card col-md-1">
+                    <img src="images/categories/Screenshot_20210927-184027_Chrome.jpg" alt="">
+                </div>
+                <div class="card col-md-1">
+                    <img src="images/categories/Screenshot_20210927-184124_Chrome-1.jpg" alt="">
+                </div>
+                <div class="card col-md-1">
+                    <img src="images/categories/Screenshot_20210927-184209_Chrome.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="Internships">
+            <h2 style="font-weight: 500;">Internshala Trainings</h2>
+            <h5 style="font-weight: lighter; margin-top: 1rem;"> Learn new-age skills on the go </h5>
+
+        </div>
+
+
+        <div class="row">
+            <div class=" card col-md-1">
+                <img src="images/trainings/20210927_182433.jpg" alt="">
+            </div>
+            <div class="card col-md-1">
+                <img src="images/trainings/Screenshot_20210927-182107_Chrome.jpg" alt="">
+            </div>
+            <div class="card col-md-1">
+                <img src="images/trainings/Screenshot_20210927-182112_Chrome (1)-1.jpg" alt="">
+            </div>
+            <div class="card col-md-1">
+                <img src="images/trainings/Screenshot_20210927-182730_Chrome.jpg" alt="">
+            </div>
+            <div class="card col-md-1">
+                <img src="images/trainings/Screenshot_20210927-182736_Chrome.jpg" alt="">
+            </div>
+            <div class="card col-md-1">
+                <img src="images/trainings/Screenshot_20210927-182740_Chrome.jpg" alt="">
+            </div>
+            <div class="card col-md-1">
+                <img src="images/trainings/Screenshot_20210927-183356_Chrome.jpg" alt="">
+            </div>
+            <div class="card col-md-1">
+                <img src="images/trainings/Screenshot_20210927-183541_Chrome.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center; margin:1.5rem; font-size: 1.2rem;"> <a style="text-decoration: none;" href="#">View
+            all trainings -></a></div>
+
+    <div class="Internships">
+        <h2 style="font-weight: 500;">Fresher Jobs</h2>
+        <h5 style="font-weight: lighter; margin-top: 1rem;"> Premium fresher jobs on your fingertips </h5>
+
+    </div>
+
+    <div class="row">
+        <div class=" card col-md-1">
+            <img src="images/jobs/Screenshot_20210927-184326_Chrome.jpg" alt="">
+            <h5 style="font-size: 15px; width: 200px;">Minimum CTC of 3 LPA</h5>
+        </div>
+        <div class="card col-md-1">
+            <img src="images/jobs/Screenshot_20210927-185508_Chrome.jpg" alt="">
+            <h5 style="font-size: 15px; width: 200px;">Dream companies</h5>
+        </div>
+        <div class="card col-md-1">
+            <img src="images/jobs/Screenshot_20210927-185701_Chrome.jpg" alt="">
+            <h5 style="font-size: 15px; width: 200px;">100% verified jobs</h5>
+        </div>
+
+    </div>
+    </div>
+
+    <div style="text-align: center; margin:1.5rem; font-size: 1.2rem;"> <a style="text-decoration: none;" href="#">View
+            all jobs-></a>
+
+    </div>
+    </div>
+
+    <footer>
+        <div class="footer_container footer">
+            <div class="footer-column desktop-footer">
+                <div class="footer-list">
+                    <h5>Internships by places</h5>
+                    <div class="footer-list-item">
+                        <a href="/internships">Internship in India</a>
+                    </div>
+                    <div class="footer-list-item">
+                        <a href="/internships/internship-in-delhi">Internship in Delhi</a>
+                    </div>
+                    <div class="footer-list-item">
+                        <a href="/internships/internship-in-bangalore">Internship in Bangalore</a>
+                    </div>
+                    <div class="footer-list-item">
+                        <a href="/internships/internship-in-hyderabad">Internship in Hyderabad</a>
+                    </div>
+                    <div class="footer-list-item">
+                        <a href="/internships/internship-in-mumbai">Internship in Mumbai</a>
+                    </div>
+                    <div class="footer-list-item">
+                        <a href="/internships/internship-in-chennai">Internship in Chennai</a>
+                    </div>
+                    <div class="footer-list-item">
+                        <a href="/internships/internship-in-gurgaon">Internship in Gurgaon</a>
+                    </div>
+                    <div class="footer-list-item">
+                        <a href="/internships/internship-in-kolkata">Internship in Kolkata</a>
+                    </div>
+                    <div class="footer-list-item">
+                        <a href="/internships/work-from-home-jobs">Virtual internship</a>
+                    </div>
+                </div>
+            </div>
+            <div class=" footer-column desktop-footer" id="stream-container">
+                <div class="footer-list">
+                    <h5>Internship by Stream</h5>
+                    <div class="footer-list-item">
+                        <a href="/internships/computer%20science-internship">Computer Science Internship</a>
+                    </div>
+                    <div class="footer-list-item">
+                        <a href="/internships/electronics-internship">Electronics Internship</a>
+                    </div>
+                    <div class="footer-list-item">
+                        <a href="/internships/mechanical-internship">Mechanical Internship</a>
+                    </div>
+                    <div class="footer-list-item">
+                        <a href="/internships/civil-internship">Civil Internship</a>
+                    </div>
+                    <div class="footer-list-item">
+                        <a href="/internships/marketing-internship">Marketing Internship</a>
+                    </div>
+                    <div class="footer-list-item">
+                        <a href="/internships/chemical-internship">Chemical Internship</a>
+                    </div>
+                    <div class="footer-list-item">
+                        <a href="/internships/finance-internship">Finance Internship</a>
+                    </div>
+                    <div class="footer-list-item">
+                        <a href="/internships/summer%20research%20fellowship-internship">Summer Research Fellowship</a>
+                    </div>
+                    <div class="footer-list-item">
+                        <a href="/internships/campus%20ambassador-internship?utm_medium=footer">Campus Ambassador
+                            Program</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" footer-column desktop-footer" id="trainings-container">
+                <div class="footer-list">
+                    <h5>
+                        <div id="trainings-footer">
+                            <a href="https://trainings.internshala.com/?utm_source=is_web_is-footer" target="_blank"
+                                rel="noopener">Online Trainings <span style="color: orange;" class="offer"
+                                    class="offer">80% OFF</span>
+                            </a>
+                        </div>
+                    </h5>
+                    <div class="footer-list-item">
+                        <a href="https://trainings.internshala.com/python-training?utm_source=is_web_is-footer"
+                            target="_blank" rel="noopener">Programming with Python</a>
+                    </div>
+                    <div class="footer-list-item">
+                        <a href="https://trainings.internshala.com/digital-marketing-training?utm_source=is_web_is-footer"
+                            target="_blank" rel="noopener">Digital Marketing</a>
+                    </div>
+                    <div class="footer-list-item">
+                        <a href="https://trainings.internshala.com/web-development-training?utm_source=is_web_is-footer"
+                            target="_blank" rel="noopener">Web Development</a>
+                    </div>
+                    <div class="footer-list-item">
+                        <a href="https://trainings.internshala.com/machine-learning-training?utm_source=is_web_is-footer"
+                            target="_blank" rel="noopener">Machine Learning</a>
+                    </div>
+                    <div class="footer-list-item">
+                        <a href="https://trainings.internshala.com/excel-training?utm_source=is_web_is-footer"
+                            target="_blank" rel="noopener">Advanced Excel</a>
+                    </div>
+                    <div class="footer-list-item">
+                        <a href="https://trainings.internshala.com/hacking-training?utm_source=is_web_is-footer"
+                            target="_blank" rel="noopener">Ethical Hacking</a>
+                    </div>
+                    <div class="footer-list-item">
+                        <a href="https://trainings.internshala.com/autocad-training?utm_source=is_web_is-footer"
+                            target="_blank" rel="noopener">AutoCAD</a>
+                    </div>
+                    <div class="footer-list-item">
+                        <a href="https://trainings.internshala.com/creative-writing-training?utm_source=is_web_is-footer"
+                            target="_blank" rel="noopener">Creative Writing</a>
+                    </div>
+                    <div class="footer-list-item">
+                        <a href="https://trainings.internshala.com/data-science-training?utm_source=is_web_is-footer"
+                            target="_blank" rel="noopener">Data Science</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-column" id="online-training-container">
+                <div class="footer-list">
+                    <a id="online-training-heading-mobile"
+                        href="https://trainings.internshala.com/?utm_source=is_web_is-footer" target="_blank"
+                        rel="noopener">
+                        <h5>Online Trainings <span style="color: orange;" class="offer">80% OFF</span>
+                        </h5>
+                    </a>
+
+                    <div class="footer-training-container">
+                        <div id="trainings_internshala_left">
+
+                            <div class="footer-list-item">
+                                <a href="https://trainings.internshala.com/python-training?utm_source=is_web_is-footer"
+                                    target="_blank" rel="noopener">Programming with Python</a>
+                            </div>
+
+                            <div class="footer-list-item">
+                                <a href="https://trainings.internshala.com/digital-marketing-training?utm_source=is_web_is-footer"
+                                    target="_blank" rel="noopener">Digital Marketing</a>
+                            </div>
+
+                            <div class="footer-list-item">
+                                <a href="https://trainings.internshala.com/web-development-training?utm_source=is_web_is-footer"
+                                    target="_blank" rel="noopener">Web Development</a>
+                            </div>
+                        </div>
+                        <div id="trainings_internshala_center">
+
+                            <div class="footer-list-item">
+                                <a href="https://trainings.internshala.com/machine-learning-training?utm_source=is_web_is-footer"
+                                    target="_blank" rel="noopener">Machine Learning</a>
+                            </div>
+
+                            <div class="footer-list-item">
+                                <a href="https://trainings.internshala.com/excel-training?utm_source=is_web_is-footer"
+                                    target="_blank" rel="noopener">Advanced Excel</a>
+                            </div>
+
+                            <div class="footer-list-item">
+                                <a href="https://trainings.internshala.com/hacking-training?utm_source=is_web_is-footer"
+                                    target="_blank" rel="noopener">Ethical Hacking</a>
+                            </div>
+                        </div>
+                        <div id="trainings_internshala_right">
+
+                            <div class="footer-list-item">
+                                <a href="https://trainings.internshala.com/autocad-training?utm_source=is_web_is-footer"
+                                    target="_blank" rel="noopener">AutoCAD</a>
+                            </div>
+
+                            <div class="footer-list-item">
+                                <a href="https://trainings.internshala.com/creative-writing-training?utm_source=is_web_is-footer"
+                                    target="_blank" rel="noopener">Creative Writing</a>
+                            </div>
+
+                            <div class="footer-list-item">
+                                <a href="https://trainings.internshala.com/data-science-training?utm_source=is_web_is-footer"
+                                    target="_blank" rel="noopener">Data Science</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-column" id="about-us-container">
+                <div class="footer-list">
+                    <h5 class="d-none d-lg-block">About Internshala</h5>
+                    <div class="footer-link-conatiner">
+                        <div id="about_internshala_left">
+                            <div class="footer-list-item">
+                                <a href="/about_us">About us</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="/careers">We're hiring</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="/registration/employer?utm_source=ISfooterHome">Hire interns for your
+                                    company</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="http://blog.internshala.com/internshala-editorials/team-diary/"
+                                    target="_blank">Team Diary</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="https://blog.internshala.com/?utm_source=IS_footer" target="_blank">Blog</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="/products_services">Our Services</a>
+                            </div>
+                        </div>
+                        <div id="about_internshala_center">
+                            <div class="footer-list-item">
+                                <a href="/terms">Terms &amp; Conditions</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="/privacy">Privacy</a>
+                            </div>
+                            <div class="footer-list-item">
+                                <a href="/contact">Contact us</a>
+                            </div>
+                        </div>
+                        <div id="about_internshala_right"></div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <hr style="margin: 0 auto; color: gray; width:97% ">
+
+
+        <div id="footer-bottom">
+            <a href="https://play.google.com/store/apps/details?id=com.internshala.app&amp;referrer=utm_source%3Dplay_footer"
+                target="_blank">
+                <div class="footer-list-item" id="android_app_container">
+                    <span>Get Android App</span>
+                </div>
+            </a>
+            <div id="social_media_container">
+                
+            </div>
+            <div class="" id="copyright" style="color: white; float: right;">
+                © Copyright 2021 Internshala
+            </div>
+            
+        </div>
+
+
+    </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+        </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous">
+        </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</html>

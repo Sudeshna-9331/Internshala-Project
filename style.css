@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter var',sans-serif!important;
+}
+.container{
+    width: 100%!important;
+   
+}
+.dropdown a{
+    color: #484848!important;
+   
+}
+.navbar {
+    background-color: white!important;
+    width: 100%!important;
+    box-shadow: 0 3px 1px 0 rgba(211, 208, 208, 0.2), 0 6px 10px 0 rgba(216, 213, 213, 0.19);
+}
+.navbar-toggler{
+    border: none!important;
+}
+.navbar-nav{
+    margin-left: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+ 
+  width: 60%;
+}
+
+.search_btn img{
+   height: 50px;
+}
+.search_btn{
+    border: none;
+   
+}
+.logo{
+width:150px!important;
+}
+.fresher_jobs a{
+    color: #484848!important;
+    
+}
+.login{
+padding: 4px 20px;
+    background: #fff;
+border: 1px solid #008BDC;
+box-sizing: border-box;
+border-radius: 3px;
+color: #008BDC;
+}
+.register{
+    list-style: none;
+    background-color:#008BDC ;
+ 
+
+padding: 0 1.2rem;
+background: #00A5EC;
+border-radius: 3px;
+
+}
+
+.fas{
+    padding: 1.1rem 1rem;
+    border-radius: none;
+}
+.register a{
+    width: 50%;
+    color: white!important;
+}
+#internship_search_button_form{
+   
+    width: 40%;
+    margin:  2rem auto;
+    
+}
+#internship_search_button_form input{
+    font-family: 'Inter var',sans-serif;
+   
+    font-weight: lighter;
+    letter-spacing: 1px;
+   
+   
+}
+#internship_search_button_form::placeholder{
+    font-size: 14px;
+}
+
+.carousel-item {
+        height: 400px;
+        width: 96%;
+        margin-left: 1.5rem;
+        box-shadow: 0 3px 8px 0 rgba(211, 208, 208, 0.2), 0 6px 10px 0 rgba(216, 213, 213, 0.19);
+        border-radius: 13px;
+}
+.carousel-item img{
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px 0 rgba(211, 208, 208, 0.2), 0 6px 10px 0 rgba(216, 213, 213, 0.19);
+}
+.Internships{
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+.popular_cities{
+    display: grid;
+      margin: 0 auto;   
+      max-width: 1170px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-column-gap: 1rem;
+      grid-row-gap: 2.5rem;
+      
+}
+.card{
+    width: 149px;
+   border: none;
+    margin: 0.9rem auto;
+   
+}
+.card:hover{
+    box-shadow: 0 1px 5px 0 rgba(85, 84, 87, 0.2), 0 1px 12px 0 rgba(0, 0, 0, 0.19);
+}
+.card img{
+    width: 100%;
+    height: 100%;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(36, 34, 34);
+    padding: 2rem 0;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+.footer  h5{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+#footer-bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(36, 34, 34);
+    padding: 2rem 2rem;
+}
+#footer-bottom a{
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width:768px){
+
+   
+    .navbar{
+        width: 100%;
+        margin: 0;
+        overflow: hidden!important;
+    }
+    .navbar-nav{
+        margin-left: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+       justify-content: start;
+       margin: 1.2rem;
+    }
+    .login{
+        margin-bottom: 1rem ;
+        }
+        .register{ margin-bottom: 1rem ;
+        
+        }
+
+        #internship_search_button_form{
+   
+            width: 80%;
+            margin:  2rem auto;
+            
+        }
+        
+        .carousel{
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
+        }
+        .carousel-inner{
+            width: 100%;
+            margin: 0;
+        }
+        .carousel-item {
+            height: 290px;
+            width: 100%;
+            
+            box-shadow: 0 3px 8px 0 rgba(211, 208, 208, 0.2), 0 6px 10px 0 rgba(216, 213, 213, 0.19);
+            border-radius: 13px;
+    }
+    .carousel-item img{
+        height: 290px;
+        width: 100%;
+        margin: 0;
+        border-radius: 10px;
+        box-shadow: 0 3px 8px 0 rgba(211, 208, 208, 0.2), 0 6px 10px 0 rgba(216, 213, 213, 0.19);
+    }
+   .footer{
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       padding-left: 2rem;
+   }
+   .footer-list{
+       margin-top: 2rem;
+   }
+    
+}
